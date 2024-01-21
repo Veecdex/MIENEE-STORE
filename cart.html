@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING CART</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="LG2.png" alt="Logo">
+        </a>
+         
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                <a id="homeLink" class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a id="aboutLink" class="nav-link" href="#">ABOUT</a>  
+                </li>
+                <li class="nav-item">
+                 <a  id="contactLink" class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+            <a id="servicesLink" class="nav-link" href="#">SERVICES</a>
+                </li>
+            </ul>
+    
+      
+
+<div class="navbar-nav">
+<form class="form-inline my-2 my-lg-0 mr-3">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: orange; color: white;">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-color: orange; color: orange;">
+        <i class="fas fa-search"></i>
+    </button>
+</form>
+<a id="cartLink" class="nav-item nav-link" href="#">
+    <i  class="fas fa-shopping-cart" style="font-size: 24px;">
+        <span id="navbarCartCount" class="nav-cart-icon">0</span>
+    </i>
+</a>
+
+
+<button id="signInButton" class="nav-item btn btn-dark rounded-pill">
+    Sign In
+</button>
+</div>
+
+
+
+    </nav>
+  
+    <div id="imageSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+    
+
+    
+        <!-- Navigation arrows -->
+        <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<div id="cartContainer">
+    <h1>Your Shopping Cart</h1>
+
+    <div id="cartItems">
+        <!-- Cart items will be displayed here -->
+    </div>
+</div>
+
+<div id="summaryContainer">
+    <a id="checkoutButton" class="checkout-button">Checkout</a>
+    <h2>Summary</h2>
+    <div id="totalPrice">Total Price: $0.00</div>
+    <div id="totalQuantity">Total Quantity: 0</div>
+  <a href=""> </a>
+</div>
+
+
+<section id="category4Products" id="additionalSection">
+    <div class="additional-container">
+        <div class="additional-text">
+            <h4>DISCOVER MORE</h4>
+            <p>Explore our latest collections and find the perfect items for your style.</p>
+            <a class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 25.00, 'img5.png')">addtocart</a>
+        </div>
+        <div class="additional-image">
+            <img src="img5.png" alt="Additional Image">
+            
+        </div>
+    </div>
+</section>
+<section id="discountSection" class="discount-section">
+    <div class="discount-content">
+        <h2 style="color: white;" >SUBSCRIBE FOR A <span class="discount-text">10% DISCOUNT</span></h2>
+        <p style="opacity: 60%;" >Get the latest updates and exclusive offers!</p>
+        <!-- Subscribe Form -->
+        <form class="subscribe-form" onsubmit="return sendFormData();">
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+    
+    </div>
+</section>
+<footer>
+    <div class="footer-left">
+      <img src="LG1.png" alt="Logo">
+      <div>
+        <p style="opacity: 60%;" >&copy; 2024 Your Company</p>
+        <p style="opacity: 60%;" >All Rights Reserved</p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-links">
+        <a  href="index.html">Home</a>
+        <a  href="contact.html">Contact</a>
+        <a  href="services.html">Service</a>
+        <a  href="services.html">About</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Get the cart link element by ID
+    var cartLink = document.getElementById("cartLink");
+
+    // Add a click event listener to the cart link
+    cartLink.addEventListener("click", function() {
+    // Redirect to the cart.html page
+    window.location.href = "cart.html";
+    });
+</script>
+<script>
+
+    // Initialize cart count
+    let cartCount = 0;
+
+    // Function to update cart count in the navbar
+    function updateCartCount() {
+        // Update the cart number in the navbar
+        const navbarCartCount = document.getElementById("navbarCartCount");
+        if (navbarCartCount) {
+        navbarCartCount.textContent = cartCount;
+        }
+    }
+
+    // Event listener for the cart icon click
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("cart-icon")) {
+        // Increment cart count
+        cartCount++;
+
+        // Update cart count in the navbar
+        updateCartCount();
+        }
+    });
+    </script>
+       <script>
+        // Define the addToCart function
+        function addToCart(productName, price, imageUrl) {
+            // Retrieve existing cart items from localStorage
+            var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the new item to the cart
+            cartItems.push({
+                name: productName,
+                price: price,
+                imageUrl: imageUrl
+            });
+
+            // Save the updated cart items back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Log the details to the console (optional)
+            console.log("Product added to cart:");
+            console.log("Name: " + productName);
+            console.log("Price: $" + price.toFixed(2));
+            console.log("Image URL: " + imageUrl);
+        }
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="g.js"></script>
+<script src="about.js"></script>
+<!-- Bootstrap JS and Popper.js CDN -->
+<script src="cart.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

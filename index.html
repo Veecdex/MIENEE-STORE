@@ -1,0 +1,848 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern E-Commerce Navigation</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nv4Xy4VS89Rk1ry5OBr0b9Zi3qGTuj9u9p1dwe8b6Lju8iFU3g2QCHqU6U0zXKmkXwXoFH8jG5aC8vjkQBBQAg==" crossorigin="anonymous" />
+
+    </head>
+    <body>
+
+      <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img height="150PX" width="100PX" src="LG2.png" alt="Logo">
+            </a>
+             
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div  class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                    <a id="homeLink" class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a id="aboutLink" class="nav-link" href="#">ABOUT</a>  
+                    </li>
+                    <li class="nav-item">
+                     <a  id="contactLink" class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                <a id="servicesLink" class="nav-link" href="#">SERVICES</a>
+                    </li>
+                </ul>
+        
+   
+
+<div class="navbar-nav">
+    <form class="form-inline my-2 my-lg-0 mr-3">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: orange; color: white;">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-color: orange; color: orange;">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <a id="cartLink" class="nav-item nav-link" href="#">
+        <i  class="fas fa-shopping-cart" style="font-size: 24px;">
+            <span id="navbarCartCount" class="nav-cart-icon">0</span>
+        </i>
+    </a>
+    
+    
+    <button id="signInButton" class="nav-item btn btn-dark rounded-pill">
+        Sign In
+    </button>
+</div>
+
+        </nav>
+        
+        <div id="imageSlider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+        
+        
+            <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+       
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="prices-under-text mr-2">Prices Under:</p>
+                        <div id="categoryContainer" class="d-flex flex-wrap justify-content-center">
+  
+            <a href="#category1Products"class="category-button">$30</a>
+            <a href="#category2Products" class="category-button">$40</a>
+            <a href="#category3Products" class="category-button">$50</a>
+            <a href="#category4Products"class="category-button category-special">Special offer</a>
+    
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+        
+
+
+    <section id="category1Products" class="category-products">
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img1.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Headset</p>
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Headset', 25.00, 'img1.png')"></i>
+                <!-- Black heart icon with adjusted size -->
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+                  <!-- 5 Stars -->
+            <div style="color: orange;" class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i style="color: white;" class="fas fa-star"></i>
+            </div>
+            </div>
+        </div>
+        
+
+        
+ 
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img2.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Shoe</p>
+                    
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 25.00, 'img2.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img3.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Wristwatch</p>
+                   
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Wristwatch', 25.00, 'img3.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: orange;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img4.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Wristwatch</p>
+                   
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Wristwatch', 25.00, 'img4.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+  
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img5.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Shoe</p>
+                    
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 25.00, 'img5.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img6.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Headset</p>
+                   
+                    <p class="product-price">Price: $25.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Headset', 25.00, 'img6.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="category2Products" class="category-products">
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img12.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Bag</p>
+                   
+                    <p class="product-price">Price: $35.00</p>
+                </div>
+        
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Bag', 35.00, 'img12.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+             
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: orange;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+
+        
+
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img11.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Laptop</p>
+                    
+                    <p class="product-price">Price: 35.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Laptop', 35.00, 'img11.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+     
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img10.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Phone</p>
+                   
+                    <p class="product-price">Price: $35.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Phone', 35.00, 'img10.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+      
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img9.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Bag</p>
+                   
+                    <p class="product-price">Price: $35.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Bag', 35.00, 'img9.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+   
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img8.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Phone</p>
+                   
+                    <p class="product-price">Price: $35.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Phone', 35.00, 'img8.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img7.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Bag</p>
+                   
+                    <p class="product-price">Price: $35.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 35.00, 'img7.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+ 
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: orange;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+
+
+    </section>    
+    <section id="category3Products" class="category-products">
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img13.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Sandal</p>
+                   
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+   
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Sandal', 45.00, 'img13.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+
+        
+       
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img14.png" alt="Product Image">
+                <div class="product-details">
+                    <p> Bag</p>
+                    
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Bag', 45.00, 'img14.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+        
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+     
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img15.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Shoe</p>
+                   
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 45.00, 'img15.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+       
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img16.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Bag</p>
+                   
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Bag', 45.00, 'img16.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+     
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img17.png" alt="Product Image">
+                <div class="product-details">
+                    <p>Headset</p>
+                   
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Headset', 45.00, 'img17.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+          
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+        
+     
+        <div class="product-container">
+            <div class="inner-container">
+                <img class="product-image" src="img10.png" alt="Product Image">
+                <div class="product-details">
+                    <p>phone</p>
+                   
+                    <p class="product-price">Price: $45.00</p>
+                </div>
+                <i class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 45.00, 'img10.png')"></i>
+                <i class="fas fa-heart heart-icon" style="color: black; font-size: 30px;"></i>
+            
+          <div style="color: orange;" class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+              <i style="color: white;" class="fas fa-star"></i>
+          </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="category4Products" id="additionalSection">
+        <div class="additional-container">
+            <div class="additional-text">
+                <h4>DISCOVER MORE</h4>
+                <p>Explore our latest collections and find the perfect items for your style.</p>
+                <a class="fas fa-shopping-cart cart-icon" onclick="addToCart('Shoe', 25.00, 'img5.png')">addtocart</a>
+            </div>
+            <div class="additional-image">
+                <img src="img5.png" alt="Additional Image">
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="discountSection" class="discount-section">
+        <div class="discount-content">
+            <h2 style="color: white;" >SUBSCRIBE FOR A <span class="discount-text">10% DISCOUNT</span></h2>
+            <p style="opacity: 60%;" >Get the latest updates and exclusive offers!</p>
+            <!-- Subscribe Form -->
+            <form class="subscribe-form" onsubmit="return sendFormData();">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        
+        </div>
+    </section>
+    <footer>
+        <div class="footer-left">
+        <img src="LG1.png" alt="Logo">
+        <div>
+            <p style="opacity: 60%;" >&copy; 2024 Your Company</p>
+            <p style="opacity: 60%;" >All Rights Reserved</p>
+        </div>
+        </div>
+
+        <div class="footer-right">
+        <div class="footer-links">
+            <a  href="index.html">Home</a>
+        <a  href="contact.html">Contact</a>
+        <a  href="services.html">Service</a>
+        <a  href="services.html">About</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i style="opacity: 60%;" class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      
+        document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopButton = document.getElementById("scrollToTop");
+
+    window.addEventListener("scroll", function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+        } else {
+        scrollToTopButton.style.display = "none";
+        }
+    });
+
+    scrollToTopButton.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+    });
+
+    </script> <script>
+        function sendFormData() {
+        // Get the email input value
+        var email = document.getElementById("emailInput").value;
+
+        // Construct the message
+        var message = "New subscription:\nEmail: " + email;
+
+        // Replace the phone number with the actual number you want to send the message to
+        var phoneNumber = "+123456";
+
+        // Construct the URL for sending a WhatsApp message (you can replace with your preferred method)
+        var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+
+        // Open the WhatsApp URL in a new tab
+        window.open(whatsappURL, "_blank");
+
+        // Prevent the form from submitting (optional)
+        return false;
+        }
+    </script>
+
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>&uarr;</span>
+    </div>
+    <script>
+
+    // Initialize cart count
+    let cartCount = 0;
+
+    // Function to update cart count in the navbar
+    function updateCartCount() {
+        // Update the cart number in the navbar
+        const navbarCartCount = document.getElementById("navbarCartCount");
+        if (navbarCartCount) {
+        navbarCartCount.textContent = cartCount;
+        }
+    }
+
+    // Event listener for the cart icon click
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("cart-icon")) {
+        // Increment cart count
+        cartCount++;
+
+        // Update cart count in the navbar
+        updateCartCount();
+        }
+    });
+    </script>
+    <script>
+
+    let cartCount = 0;
+
+    function addToCart(element) {
+        const productContainer = element.closest('.product-container');
+        
+        // Get the data dynamically
+        const containerImage = productContainer.querySelector('.product-image').src;
+        const selectedSize = productContainer.querySelector('.size-dropdown').value;
+        const selectedPrice = parseFloat(productContainer.querySelector('.product-price').textContent.trim().split(": ")[1]);
+
+        // Assuming you have a cart data structure, you can push the item to it
+        const cartItem = {
+            image: containerImage,
+            size: selectedSize,
+            price: selectedPrice,
+            quantity: 1 // You can add a quantity dropdown in the cart.html page
+        };
+
+        // Add the item to the cart data structure or perform other desired actions
+        // For now, let's just increment the cart count
+        cartCount++;
+        updateCartCount();
+    }
+
+    function updateCartCount() {
+        // Update the cart number in the navbar
+        const navbarCartCount = document.getElementById("navbarCartCount");
+        if (navbarCartCount) {
+            navbarCartCount.textContent = cartCount;
+        }
+    }
+
+    // Event listener for the cart icon click
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("cart-icon")) {
+            addToCart(event.target);
+        }
+    });
+
+    </script>
+    <!-- Include jQuery library -->
+ 
+
+    <script>
+        // Define a variable to store cart items
+        var cartItems = [];
+
+        // Function to add item to the cart
+        function addItemToCart(containerId, productName, size, price, imageUrl) {
+            // Create an object representing the item
+            var item = {
+                containerId: containerId,
+                productName: productName,
+                size: size,
+                price: price,
+                imageUrl: imageUrl,
+                quantity: 1 // You can set an initial quantity or adjust this based on your requirements
+            };
+
+            // Add the item to the cartItems array
+            cartItems.push(item);
+
+            // Update the display of cart items in the cart.html page
+            updateCartDisplay();
+        }
+
+        // Function to update the display of cart items in the cart.html page
+        function updateCartDisplay() {
+            // You'll implement this part based on how you want to display the cart items
+            // For example, you can use jQuery to update the HTML of a <div> element with the cart contents
+            // Here's a simple example assuming you have a <div> with the id "cartItems":
+            var cartItemsDiv = $("#cartItems");
+            cartItemsDiv.empty(); // Clear previous contents
+
+            // Loop through cartItems and append information to the cartItemsDiv
+            for (var i = 0; i < cartItems.length; i++) {
+                var item = cartItems[i];
+                var itemHtml = "<div class='cart-item'>" +
+                    "<img src='" + item.imageUrl + "' alt='" + item.productName + "'>" +
+                    "<p>" + item.productName + "</p>" +
+                    "<p>Size: " + item.size + "</p>" +
+                    "<p>Price: " + item.price + "</p>" +
+                    "<p>Quantity: " + item.quantity + "</p>" +
+                    "</div>";
+
+                cartItemsDiv.append(itemHtml);
+            }
+        }
+
+        // Event listener for the cart icon click
+        $(document).on("click", ".cart-icon", function() {
+            var productContainer = $(this).closest(".inner-container");
+            var containerId = productContainer.find(".size-dropdown").data("container");
+            var productName = productContainer.find(".product-details p:first-child").text();
+            var size = productContainer.find(".size-dropdown").val();
+            var price = productContainer.find(".product-price").text().replace("Price: ", "");
+            var imageUrl = productContainer.find(".product-image").attr("src");
+
+            // Add the item to the cart
+            addItemToCart(containerId, productName, size, price, imageUrl);
+        });
+    </script>
+    <script>
+        // Get the cart link element by ID
+        var cartLink = document.getElementById("cartLink");
+
+        // Add a click event listener to the cart link
+        cartLink.addEventListener("click", function() {
+        // Redirect to the cart.html page
+        window.location.href = "cart.html";
+        });
+    </script>
+    <!-- Include this script in your HTML file -->
+    <!-- Add this script block to your index.html file -->
+    <script>
+        // Retrieve the cart items from localStorage
+        var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Function to update quantity
+        function updateQuantity(index, quantityChange) {
+            var updatedCart = [...cartItems]; // Create a shallow copy of the cart array
+            updatedCart[index] = {
+                ...updatedCart[index], // Create a shallow copy of the specific product object
+                quantity: (updatedCart[index].quantity || 1) + quantityChange
+            };
+
+            localStorage.setItem('cart', JSON.stringify(updatedCart));
+            location.reload(); // Refresh the page to reflect the updated quantity
+        }
+
+        // Define the addToCart function
+        function addToCart(productName, price, imageUrl, size) {
+            var selectedSize = size; // You can modify this based on how you retrieve the size in your code
+
+            var cartItem = {
+                name: productName,
+                price: price,
+                imageUrl: imageUrl,
+                size: selectedSize,
+                quantity: 1 // Initial quantity is set to 1
+            };
+
+            // Add the item to the cart
+            cartItems.push(cartItem);
+
+            // Save the updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Refresh the page to update the cart display
+            location.reload();
+        }
+
+        // Display the cart items
+        var cartContainer = document.getElementById('cartItems');
+
+        if (cartItems.length === 0) {
+            cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cartItems.forEach(function(item, index) {
+                var itemElement = document.createElement('div');
+                itemElement.classList.add('product-container');
+                itemElement.innerHTML = `
+                    <img class="product-image" src="${item.imageUrl}" alt="Product Image">
+                    <div class="product-details">
+                        <p>${item.name}</p>
+                        <p>Size: ${item.size}</p>
+                        <p class="product-price">Price: $<span class="price" data-index="${index}">${(item.price * (item.quantity || 1)).toFixed(2)}</span></p>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-buttons">
+                            <button onclick="updateQuantity(${index}, -1)">-</button>
+                            <button onclick="updateQuantity(${index}, 1)">+</button>
+                        </div>
+                        <div class="quantity-display">${item.quantity || 1}</div>
+                    </div>
+                `;
+                cartContainer.appendChild(itemElement);
+            });
+        }
+    </script>
+
+    <!-- Include this script in your HTML file -->
+    <script>
+        // Define the addToCart function
+        function addToCart(productName, price, imageUrl) {
+            // Retrieve existing cart items from localStorage
+            var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the new item to the cart
+            cartItems.push({
+                name: productName,
+                price: price,
+                imageUrl: imageUrl
+            });
+
+            // Save the updated cart items back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+
+            // Log the details to the console (optional)
+            console.log("Product added to cart:");
+            console.log("Name: " + productName);
+            console.log("Price: $" + price.toFixed(2));
+            console.log("Image URL: " + imageUrl);
+        }
+    </script>
+
+
+    </script>
+       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       <script src="g.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

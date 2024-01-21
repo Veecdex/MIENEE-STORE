@@ -1,0 +1,347 @@
+#aboutUsSection {
+    background-color: white;
+    padding: 60px; /* Increase the padding for a taller section */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex; /* Use flexbox to align text and image */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center items vertically */
+}
+
+#aboutUsText {
+    flex: 1; /* Allow the text to take available space */
+}
+
+#aboutUsText h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px; /* Increase the margin for more spacing */
+}
+
+#aboutUsText p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Break long words into multiple lines */
+}
+
+#aboutUsImage {
+    border-radius: 8px;
+    width: 100%; /* Ensure the image takes the full width of the container */
+    max-width: 450px; /* Limit the maximum width of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    height: 400px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #aboutUsSection {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 40px; /* Adjust padding for smaller screens */
+    }
+
+    #aboutUsText, #aboutUsImage {
+        width: 100%; /* Allow both text and image to take full width */
+        margin-bottom: 20px; /* Add some space between text and image on smaller screens */
+    }
+
+    #aboutUsImage {
+        max-width: none; /* Allow the image to be its natural size */
+    }
+}
+
+.discount-section {
+
+padding: 40px;
+text-align: center;
+height: 100%;
+box-sizing: border-box;
+}
+
+footer {
+background-color: #201e1e;
+color: white;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 250px; /* Increase height */
+box-sizing: border-box;
+}
+
+footer img {
+width: 80px; /* Increase the width of your logo */
+margin-right: 20px; /* Add some space to the right of the logo */
+}
+
+.footer-left {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-right {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 10px;
+}
+
+.footer-left p {
+margin-top: 10px;
+}
+
+.footer-links {
+margin-top: 10px;
+}
+
+.footer-links a {
+color: white;
+text-decoration: none;
+margin-bottom: 10px;
+font-weight: bold;
+transition: color 0.3s;
+margin-right: 10px; /* Add margin right to the links */
+}
+
+.footer-links a:hover {
+color: orange;
+}
+
+.social-icons {
+display: flex;
+margin-top: 10px; /* Add margin top to the social icons */
+}
+
+.social-icons a {
+color: white;
+margin-right: 10px;
+font-size: 18px;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: orange;
+}
+
+@media (max-width: 768px) {
+footer {
+flex-direction: column;
+text-align: center;
+height: auto; /* Auto height for smaller screens */
+}
+
+.footer-left,
+.footer-right {
+margin-bottom: 10px;
+}
+}
+.discount-section {
+background-color: rgb(68, 65, 65);
+padding: 40px; /* Increase padding for a broader section */
+text-align: center;
+}
+
+.discount-content {
+width: 80%; /* Increase width for a broader content area */
+margin: 0 auto;
+}
+
+.discount-section h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.discount-text {
+color: orange; /* Set the text color to orange */
+}
+
+.discount-section p {
+font-size: 16px;
+color  : white;
+margin-bottom: 20px;
+}
+
+.subscribe-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.subscribe-form input {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.subscribe-form button {
+background-color: orange;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+}
+
+
+.scroll-to-top {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: orange;
+color: white;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scroll-to-top:hover {
+background-color: #ff8c00; /* darker orange on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom right;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: orange;
+}
+
+
+
+.navbar-light .navbar-brand img {
+    height: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link i {
+    color: orange;
+}
+
+#imageSlider {
+    border-radius: 15px;
+    height: 400px; /* Default height for larger screens */
+    overflow: hidden; /* Ensure that the content doesn't overflow */
+    margin-left: 10px; /* Increased margin to the left */
+    margin-right: 10px; /* Increased margin to the right */
+    margin-top: 60px; /* Added margin-top to ensure the image is not under the navbar */
+}
+
+#imageSlider img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%; /* Ensure the image covers the entire container */
+}
+
+
+
+.cart-icon {
+    font-size: 24px;
+    color: orange;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    /* Media query for screens up to 767px width (typically mobile devices) */
+    #imageSlider {
+        height: 150px; /* Adjust the height for smaller screens */
+        margin-top: 60px; /* Adjusted margin-top for smaller screens */
+    }
+
+
+}
+#additionalSection {
+    margin-top: 40px; /* Adjust as needed */
+  }
+  
+  .additional-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 10px; /* Add margin to the left and right for better spacing */
+  }
+  
+  .additional-text {
+    flex: 1;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing on smaller screens */
+  }
+  
+  .additional-image img {
+    width: 100%; /* Set the width to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    max-width: 500px; /* Set the maximum width to 500px for larger screens */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+    .additional-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+        margin: 10px; /* Adjust margin for better spacing on smaller screens */
+    }
+  
+    .additional-text {
+        margin-bottom: 0; /* Remove margin at the bottom for spacing on smaller screens */
+    }
+  }
+  #navbarCartCount {
+    position: absolute;
+    top: -8px; /* Adjust this value based on your icon size and position */
+    right: -8px; /* Adjust this value based on your icon size and position */
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  #cartLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  #cartLink i {
+    position: relative;
+  }
